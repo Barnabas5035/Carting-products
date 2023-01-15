@@ -11,7 +11,7 @@ const Home = () => {
   console.log(CartProductId)
   return (
     <div className='bg-white-200   p-6   '>
-      <div className='sm:grid-cols-1 grid grid-cols-1 gap-x-4 gap-y-8  mt-8 lg:grid-cols-3  '>
+      <div className='sm:grid-cols-3 grid grid-cols-1 gap-x-4 gap-y-8   mt-8 lg:grid-cols-3 '>
         {product.map((data) => {
           const { id, imageUrl, price, name } = data
           return (
@@ -23,7 +23,7 @@ const Home = () => {
                   className='sm:w-full md:w-full  lg:w-full'
                 />
               </div>
-              <div className='sm:flex-jusify-center text-center md:flex-jusify-center text-center lg: flex-jusify-center text-center'>
+              <div className='sm:flex-jusify-center text-center md:flex-jusify-center text-center lg: flex-jusify-center text-center '>
                 <h5 className='mt-2 text-black text-lg font-medium font-serif'>
                   {name}
                 </h5>
@@ -32,7 +32,7 @@ const Home = () => {
                 </p>
                 {!CartProductId.includes(data.id) && (
                   <button
-                    className='sm:text-center md:text-center lg:text-center bg-sky-500/100 rounded py-2 px-2 mt-1 '
+                    className='sm:text-center md:text-center lg:text-center bg-sky-500/100 rounded py-2 px-2 '
                     onClick={() => dispatch(addToCart(data.id))}
                   >
                     addToCart
@@ -55,4 +55,3 @@ const Home = () => {
   )
 }
 
-export default Home
