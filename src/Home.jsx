@@ -11,7 +11,7 @@ const Home = () => {
   console.log(CartProductId)
   return (
     <div className='bg-white-200   p-6   '>
-      <div className='sm:grid-cols-3 grid grid-cols-1 gap-x-4 gap-y-8  mt-8 lg:grid-cols-3  '>
+      <div className='sm:grid-cols-1 grid grid-cols-1 gap-x-4 gap-y-8  mt-8 lg:grid-cols-3  '>
         {product.map((data) => {
           const { id, imageUrl, price, name } = data
           return (
