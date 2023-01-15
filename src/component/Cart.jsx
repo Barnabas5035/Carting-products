@@ -18,7 +18,7 @@ const Cart = () => {
         Items in Cart
       </h3>
       {CartProductData.length > 0 && (
-        <div className=' flex flex-col gap-x-4 gap-y-8   shadow-lg w-9/12 h-8/12 mx-auto bg-white mt-2'>
+        <div className='sm:flex-col md:flex-col lg:flex-col flex flex-col gap-x-4 gap-y-8   shadow-lg w-9/12 h-8/12 mx-auto bg-white mt-2'>
           {CartProductData.map((data) => {
             const { id, imageUrl, detail, name } = data
             return (
@@ -30,7 +30,7 @@ const Cart = () => {
                     className='w-16 md:w-32 sm:w-16 lg:w-48 '
                   />
                 </div>
-                <div className='sm:text-center md:text-center lg:text-start '>
+                <div className='sm:flex-jusify-center text-center md:flex-jusify-center text-center lg:flex-jusify-center text-start '>
                   <h4 className='mt-2 text-black text-lg font-medium font-serif'>
                     {name}
                   </h4>
@@ -54,3 +54,4 @@ const Cart = () => {
 }
 
 export default Cart
+
