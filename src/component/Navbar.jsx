@@ -6,7 +6,7 @@ import { BsShopWindow, BsCart3, BsGrid3X3GapFill } from 'react-icons/bs'
 const Navbar = () => {
   const { CartProductId } = useSelector((state) => state.Cart)
   return (
-    <nav className='bg-blue-500'>
+    <nav className='bg-blue-500 sticky top-0'>
       <div className='max-w-full border border-blue-600  mx-auto'>
         <div className='flex justify-between'>
           <div className='flex  mx-4 py-2'>
